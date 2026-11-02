@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone - Exercícios</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f0f0f;
+            color: #f1f1f1;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #181818;
+            padding: 22px 8%;
+            border-bottom: 1px solid #303030;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #ff3333;
+        }
+
+        .logo span {
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+
+        .introducao {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .introducao h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .introducao p {
+            color: #aaaaaa;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .exercicios {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background-color: #202020;
+            border: 1px solid #303030;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background-color: #292929;
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aaaaaa;
+            line-height: 1.5;
+            margin-bottom: 22px;
+            font-size: 14px;
+        }
+
+        .card a {
+            display: inline-block;
+            background-color: #cc0000;
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .card a:hover {
+            background-color: #ff3333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            border-top: 1px solid #303030;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        @media (max-width: 650px) {
+            .exercicios {
+                grid-template-columns: 1fr;
+            }
+
+            .introducao h1 {
+                font-size: 25px;
+            }
+
+            header {
+                padding: 20px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">▶ YouTube <span>Clone</span></div>
+    </header>
+
+    <main>
+
+        <section class="introducao">
+            <h1>Exercícios de Desenvolvimento Web</h1>
+
+            <p>
+                Este projeto reúne quatro exercícios práticos desenvolvidos
+                com HTML e CSS, reproduzindo diferentes elementos da interface
+                do YouTube.
+            </p>
+        </section>
+
+        <section class="exercicios">
+
+            <article class="card">
+                <h2>Exercício 1</h2>
+                <p>
+                    Reprodução dos elementos de cabeçalho, logotipo,
+                    campo de pesquisa e organização inicial da página.
+                </p>
+                <a href="exercicio1.html">Acessar exercício</a>
+            </article>
+
+            <article class="card">
+                <h2>Exercício 2</h2>
+                <p>
+                    Construção de uma grade de vídeos recomendados,
+                    utilizando recursos de organização e estilização com CSS.
+                </p>
+                <a href="exercicio2.html">Acessar exercício</a>
+            </article>
+
+            <article class="card">
+                <h2>Exercício 3</h2>
+                <p>
+                    Reprodução da área de reprodução de vídeo,
+                    incluindo título, informações e metadados.
+                </p>
+                <a href="exercicio3.html">Acessar exercício</a>
+            </article>
+
+            <article class="card">
+                <h2>Exercício 4</h2>
+                <p>
+                    Desenvolvimento da seção de comentários,
+                    com elementos de texto e organização visual.
+                </p>
+                <a href="exercicio4.html">Acessar exercício</a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico - Desenvolvimento Web</p>
+        <p>Desenvolvido com HTML5 e CSS3</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Gear (SNES) - YouTube</title>
+
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9f9f9;
+            color: #0f0f0f;
+        }
+
+        header {
+            background-color: white;
+            padding: 12px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header table {
+            width: 100%;
+        }
+
+        header h1 {
+            font-size: 25px;
+            margin: 0;
+        }
+
+        header input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+        }
+
+        button {
+            padding: 9px 14px;
+            margin: 3px;
+            border: none;
+            border-radius: 20px;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .layout {
+            width: 100%;
+            border-spacing: 12px 0;
+        }
+
+        .lateral-vazia {
+            width: 15%;
+        }
+
+        .video-principal {
+            width: 55%;
+            vertical-align: top;
+        }
+
+        .recomendados {
+            width: 30%;
+            vertical-align: top;
+        }
+
+        .video-frame {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .titulo-video {
+            font-size: 23px;
+            margin: 16px 0;
+        }
+
+        .canal p,
+        .metadados,
+        .recomendado p {
+            color: #606060;
+            font-size: 13px;
+        }
+
+        .acoes {
+            margin: 15px 0;
+        }
+
+        .descricao {
+            background-color: #eee;
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 12px;
+            line-height: 1.6;
+        }
+
+        .jogo {
+            background-color: white;
+            padding: 16px;
+            margin: 16px 0;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+        }
+
+        .comentarios {
+            margin-top: 25px;
+        }
+
+        .comentarios input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-bottom: 1px solid #aaa;
+            background: transparent;
+        }
+
+        .comentario {
+            padding: 12px 0;
+            margin: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .comentario p {
+            line-height: 1.5;
+        }
+
+        .recomendados h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .recomendado {
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .recomendado td {
+            vertical-align: top;
+            padding: 5px;
+        }
+
+        .recomendado img {
+            width: 140px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .recomendado h4 {
+            margin: 0 0 8px;
+            font-size: 14px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 18px 0;
+        }
+
+        /* Seletores combinados */
+        .descricao p,
+        .jogo p {
+            margin-bottom: 10px;
+        }
+
+        /* Pseudoclasse */
+        .comentario:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 900px) {
+            .lateral-vazia {
+                display: none;
+            }
+
+            .video-principal {
+                width: 65%;
+            }
+
+            .recomendados {
+                width: 35%;
+            }
+
+            .recomendado img {
+                width: 100px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            header table,
+            header tr,
+            header td {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+
+            header td {
+                margin-bottom: 10px;
+            }
+
+            header input[type="text"] {
+                width: 60%;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .layout,
+            .layout tr,
+            .layout td {
+                display: block;
+                width: 100%;
+            }
+
+            .recomendados {
+                margin-top: 30px;
+            }
+
+            .recomendado img {
+                width: 110px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <table>
+        <tr>
+            <td width="20%">
+                <h1>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9dSwc_HNcp5t6UetDaajdWaUAo2k5XCVzMJmnwcMtww&s=10"
+                        alt="Símbolo do YouTube"
+                        width="25"
+                        height="15">
+                    YouTube
+                </h1>
+            </td>
+
+            <td width="60%" align="center">
+                <form>
+                    <input type="text" placeholder="Pesquisar">
+                    <button type="submit">Pesquisar</button>
+                    <button type="button">Pesquisa por voz</button>
+                </form>
+            </td>
+
+            <td width="20%" align="right">
+                <button type="button">Criar</button>
+                <button type="button">Notificações</button>
+                <button type="button">Fazer login</button>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<main>
+    <table class="layout">
+        <tr>
+            <td class="lateral-vazia">&nbsp;</td>
+
+            <td class="video-principal">
+
+                <article>
+                    <img
+                        class="video-frame"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgXs6qGtqV9d370WZBcTZRghcnf-JMhlOye-CAwZATEw&s=10"
+                        alt="Top Gear (SNES) - Part 1: USA">
+                </article>
+
+                <h1 class="titulo-video">
+                    Top Gear (SNES) - Part 1: USA
+                </h1>
+
+                <table class="canal">
+                    <tr>
+                        <td>
+                            <h3>MetalSmashergaming</h3>
+                            <p>20,5 mil inscritos</p>
+                        </td>
+
+                        <td>
+                            <!-- CSS INLINE -->
+                            <button
+                                style="background-color: #0f0f0f; color: white; border-radius: 20px;">
+                                Inscrever-se
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="acoes">
+                    <button>Gostei (28 mil)</button>
+                    <button>Não gostei</button>
+                    <button>Compartilhar</button>
+                    <button>Salvar</button>
+                    <button>...</button>
+                </div>
+
+                <hr>
+
+                <div class="descricao">
+                    <p>
+                        <strong>2,2 mi de visualizações há 14 anos</strong>
+                    </p>
+
+                    <p>
+                        For my new series, I thought I'd start it out with a
+                        racing game from the 90s, Top Gear. I've always liked
+                        racing games as a kid, and this one is no exception.
+                        It's fast-paced, and has some really cool music.
+                        So in this video, we tackle the first country of the
+                        game, the good old USA. Travelling back to the gameplay
+                        videos of retro games, the video captures a video of
+                        Los Angeles, the Big Apple of New York, and the coastal
+                        city of San Francisco.
+                    </p>
+                </div>
+
+                <div class="jogo">
+                    <h4>Top Gear</h4>
+                    <p>1992 • SNES • Jogo</p>
+                    <button>Jogar</button>
+                </div>
+
+                <hr>
+
+                <section class="comentarios">
+                    <h3>2.467 comentários</h3>
+                    <button>Ordenar por</button>
+
+                    <p>
+                        <input
+                            type="text"
+                            placeholder="Adicione um comentário...">
+                    </p>
+
+                    <article class="comentario">
+                        <p>
+                            <strong>@MetalSmashergaming</strong>
+                            - há 4 anos (editado)
+                        </p>
+
+                        <p>
+                            Behold, the ultimate Top Gear soundtrack experience
+                            you ever heard - 16 Bit Remaster, Top Gear: Ultimate
+                            Edition Band! I'm a massive fan of Top Gear &amp;
+                            SNES gaming, so it was required I perform a Top Gear
+                            cover - enjoy!
+                        </p>
+
+                        <button>Responder</button>
+                    </article>
+
+                    <article class="comentario">
+                        <p>
+                            <strong>@PAULOBASS77</strong> - há 2 anos
+                        </p>
+
+                        <p>
+                            Saudades da infância, 1993-94. Era um dos meus
+                            poucos jogos preferidos. Nostalgia pura!
+                        </p>
+
+                        <button>Responder</button>
+                    </article>
+                </section>
+            </td>
+
+            <td class="recomendados">
+                <h2>Vídeos recomendados</h2>
+
+                <table class="recomendado">
+                    <tr>
+                        <td>
+                            <img
+                                src="https://www.retrogames.cz/games/1211/SNES_01.gif"
+                                alt="Top Gear Part 2">
+                        </td>
+                        <td>
+                            <h4>Top Gear (SNES) - Part 2: South America</h4>
+                            <p>MetalSmashergaming</p>
+                            <p>336 mil visualizações • há 14 anos</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="recomendado">
+                    <tr>
+                        <td>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZw0zQMXVp44fB_tduMRm9xpsizFrl5twUZ_qYjwa1A&s=10"
+                                alt="Corra que a Polícia Vem Aí">
+                        </td>
+                        <td>
+                            <h4>As cenas mais engraçadas da trilogia Corra que a Polícia ve...</h4>
+                            <p>Boxooffice+ Brasil</p>
+                            <p>686 mil visualizações • há 2 anos</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="recomendado">
+                    <tr>
+                        <td>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBQ_1qlZPH83LwL4Vk_-nUReQgoxZQ3G57fnGMUmckA&s=10"
+                                alt="Street Fighter 2 Champion Edition">
+                        </td>
+                        <td>
+                            <h4>Street Fighter 2 Champion Edition - Arcade Gameplay</h4>
+                            <p>Arcade Classics</p>
+                            <p>890 mil visualizações • há 5 anos</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="recomendado">
+                    <tr>
+                        <td>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbkCQQXZImG4h8cY8FFDuQo_vQCQ7gRGvLzk17xt5e8w&s=10"
+                                alt="Jogando F-Zero do Super Nintendo">
+                        </td>
+                        <td>
+                            <h4>Jogando F-Zero do Super Nintendo</h4>
+                            <p>Nostalgia Games</p>
+                            <p>300 mil visualizações • há 1 ano</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="recomendado">
+                    <tr>
+                        <td>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxp0SAyDTWN2IU0kD5NYxX7GgmM8UolBiIRjLRMoE8LA&s=10"
+                                alt="Evolução de Top Gear">
+                        </td>
+                        <td>
+                            <h4>1992 vs 2024 - EVOLUÇÃO DE TOP GEAR</h4>
+                            <p>Games Evolução</p>
+                            <p>150 mil visualizações • há 6 meses</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="recomendado">
+                    <tr>
+                        <td>
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Yl-A5zVQJoPJbXKcgoYOLemJliOzzcUvSdRZbs6QtQ&s"
+                                alt="Need for Speed Underground 2">
+                        </td>
+                        <td>
+                            <h4>NEED FOR SPEED UNDERGROUND 2 - Trilha Sonora Completa</h4>
+                            <p>Nostalgia Sound</p>
+                            <p>4 mi de visualizações • há 6 anos</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</main>
+
+</body>
+</html>
